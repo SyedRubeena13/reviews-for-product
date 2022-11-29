@@ -1,0 +1,38 @@
+
+
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> productId </th>
+            <th> productName</th>
+            <th> productPrice</th>
+            <th> category</th>
+            <th> approve</th>
+            <th> seller</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let p of product" >
+            <td> {{ p.productId }} </td>
+            <td> {{ p.productName }} </td>
+            <td> {{ p.productPrice }} </td>
+            <td> {{ p.category }} </td>
+            <td> {{ p.approve }} </td>
+            <td> {{ p.seller }} </td>
+            <td>
+                <!-- <button class = "btn btn-info"> Update</button> -->
+                <button (click) = "deleteProduct(p.productId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+
+                <button (click) = "updateproduct(p.productId)" class = "btn btn-info"> Update</button>
+
+            </td>
+            <!-- <td>
+                <button (click) = "updateEmployee(employee.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteEmployee(employee.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "employeeDetails(employee.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td> -->
+        </tr>
+    </tbody>
+</table>
+

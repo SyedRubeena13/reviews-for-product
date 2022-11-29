@@ -1,0 +1,46 @@
+<!-- <div>
+ 
+ <div style="background-color: #DFE5E9; margin-top: 2%;">
+   <h1 style="color: #07446D;margin-left: 38%; margin-bottom: 5%;">Feedback Management</h1>
+ </div>
+ <div class="container" style="margin-top: 1%;margin-bottom: 2%;">
+
+<form class="text-center border border-light p-5">
+ <p class="h4 mb-4">Sign in</p>
+
+ <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail" [(ngModel)]="username" name="username" required>
+
+ <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
+
+<br>
+
+ <button type="button" class="btn btn-outline-primary" (click)="login()">Login In </button>
+</form>
+
+ </div>
+</div> -->
+   
+
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+      <li>  <a routerLink="product-list" routerLinkActive="active" class="nav-link" >Product List</a>
+      </li>
+        <li class = "nav-item">
+            <a routerLink="create-product" routerLinkActive="active" class="nav-link" >Add Product</a>
+        </li>
+        <li class = "nav-item">
+          <a routerLink="feedback-list" routerLinkActive="active" class="nav-link" >FeedBack List</a>
+      </li>
+      <li class = "nav-item">
+        <a routerLink="create-feedback" routerLinkActive="active" class="nav-link" >Add Feedback</a>
+    </li>
+    </ul>
+</nav>
+
+
+
+
+  <router-outlet>
+
+</router-outlet>
